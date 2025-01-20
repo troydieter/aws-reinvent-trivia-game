@@ -24,7 +24,7 @@ aws iam create-service-linked-role --aws-service-name lex.amazonaws.com
 
 ## Customize
 
-Replace all references to 'aws-user.group' with your own domain name.
+Replace all references to 'awsuser.group' with your own domain name.
 
 ## Deploy
 

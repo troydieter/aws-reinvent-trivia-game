@@ -3,6 +3,6 @@
     "project" : "reinvent-trivia"
   },
   "Parameters" : {
-    "TriviaBackendDomain": "api.aws-user.group"
+    "TriviaBackendDomain": "api.awsuser.group"
   }
 }

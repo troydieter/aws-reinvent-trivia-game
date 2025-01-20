@@ -6,7 +6,7 @@
     "Stage" : "prod",
     "SourceBucket": "SOURCE_BUCKET",
     "SourceObjectKey": "SOURCE_OBJECT_KEY",
-    "WebpageUrl": "https://www.aws-user.group",
-    "ApiEndpoint": "https://api.aws-user.group/"
+    "WebpageUrl": "https://www.awsuser.group",
+    "ApiEndpoint": "https://api.awsuser.group/"
   }
 }

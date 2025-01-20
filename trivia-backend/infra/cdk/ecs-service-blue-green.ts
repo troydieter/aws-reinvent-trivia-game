@@ -343,8 +343,8 @@ class TriviaBackendStack extends Stack {
 
 const app = new App();
 new TriviaBackendStack(app, 'TriviaBackendTest', {
-  domainName: 'api-test.aws-user.group',
-  domainZone: 'aws-user.group',
+  domainName: 'api-test.awsuser.group',
+  domainZone: 'awsuser.group',
   deploymentHooksStack: 'TriviaBackendHooksTest',
   env: { account: process.env['CDK_DEFAULT_ACCOUNT'], region: 'us-east-1' },
   tags: {
@@ -352,8 +352,8 @@ new TriviaBackendStack(app, 'TriviaBackendTest', {
   }
 });
 new TriviaBackendStack(app, 'TriviaBackendProd', {
-  domainName: 'api.aws-user.group',
-  domainZone: 'aws-user.group',
+  domainName: 'api.awsuser.group',
+  domainZone: 'awsuser.group',
   deploymentHooksStack: 'TriviaBackendHooksProd',
   env: { account: process.env['CDK_DEFAULT_ACCOUNT'], region: 'us-east-1' },
   tags: {

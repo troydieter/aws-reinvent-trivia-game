@@ -10,10 +10,10 @@ var triviaEndpoint;
 var setupEndpoint = function() {
   switch(process.env.NODE_ENV) {
   case 'production':
-    triviaEndpoint = 'https://api.aws-user.group';
+    triviaEndpoint = 'https://api.awsuser.group';
     break;
   case 'test':
-    triviaEndpoint = 'https://api-test.aws-user.group';
+    triviaEndpoint = 'https://api-test.awsuser.group';
     break;
   case 'development':
   case 'local':

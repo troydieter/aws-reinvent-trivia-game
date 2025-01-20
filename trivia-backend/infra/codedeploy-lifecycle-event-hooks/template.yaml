@@ -5,7 +5,7 @@ Description: Validation hooks for trivia backend
 Parameters:
   TriviaBackendDomain:
     Type: String
-    Default: 'api.aws-user.group'
+    Default: 'api.awsuser.group'
 
   TriviaBackendTestPort:
     Type: Number
@@ -38,7 +38,7 @@ Resources:
         Role: ""
       Environment:
         Variables:
-          TargetUrl: !Join # Example: https://api.aws-user.group:9002/api/trivia/all
+          TargetUrl: !Join # Example: https://api.awsuser.group:9002/api/trivia/all
             - ''
             - - 'https://'
               - !Ref TriviaBackendDomain

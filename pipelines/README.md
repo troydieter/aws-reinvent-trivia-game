@@ -25,7 +25,7 @@ Follow the [CodeStar Notifications user guide](https://docs.aws.amazon.com/codes
 
 ## Customize
 
-Replace all references to 'aws-samples' with your own fork of this repo.  Replace all references to 'aws-user.group' with your own domain name.
+Replace all references to 'aws-samples' with your own fork of this repo.  Replace all references to 'awsuser.group' with your own domain name.
 
 ## Deploy
 

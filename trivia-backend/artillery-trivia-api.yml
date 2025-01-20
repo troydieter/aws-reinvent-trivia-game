@@ -1,5 +1,5 @@
 # Run with:
-# artillery run -t https://api-test.aws-user.group artillery-trivia-api.yml
+# artillery run -t https://api-test.awsuser.group artillery-trivia-api.yml
 
 config:
   http:

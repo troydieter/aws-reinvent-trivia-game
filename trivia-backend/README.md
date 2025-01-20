@@ -1,6 +1,6 @@
 # Trivia Backend API Service
 
-The trivia backend is a REST API that serves questions and answers.  A running example can be seen on [api.aws-user.group](https://api.aws-user.group/api/docs/).
+The trivia backend is a REST API that serves questions and answers.  A running example can be seen on [api.awsuser.group](https://api.awsuser.group/api/docs/).
 
 ## Prep
 
@@ -15,14 +15,14 @@ aws ecr create-repository --region us-east-1 --tags Key=project,Value=reinvent-t
 Create AWS Certificate Manager certificates for the 'api' and 'test-api' subdomains, then put the unique ARN of those certificates in an AWS Systems Manager Parameter Store parameter.
 
 ```
-aws ssm put-parameter --region us-east-1 --tags Key=project,Value=reinvent-trivia --name CertificateArn-api.aws-user.group --type String --value arn:aws:acm:...
+aws ssm put-parameter --region us-east-1 --tags Key=project,Value=reinvent-trivia --name CertificateArn-api.awsuser.group --type String --value arn:aws:acm:...
 
-aws ssm put-parameter --region us-east-1 --tags Key=project,Value=reinvent-trivia --name CertificateArn-test-api.aws-user.group --type String --value arn:aws:acm:...
+aws ssm put-parameter --region us-east-1 --tags Key=project,Value=reinvent-trivia --name CertificateArn-test-api.awsuser.group --type String --value arn:aws:acm:...
 ```
 
 ## Customize
 
-Replace all references to 'aws-user.group' with your own domain name. This sample assumes that you already registered your domain name and created a [Route53 hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/AboutHZWorkingWith.html) for the domain name in your AWS account.
+Replace all references to 'awsuser.group' with your own domain name. This sample assumes that you already registered your domain name and created a [Route53 hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/AboutHZWorkingWith.html) for the domain name in your AWS account.
 
 ## Build Docker images
 
@@ -126,7 +126,7 @@ aws cloudformation deploy \
   --tags project=reinvent-trivia \
   --capabilities CAPABILITY_NAMED_IAM \
   --tags project=reinvent-trivia \
-  --parameter-overrides TriviaBackendDomain=api-test.aws-user.group
+  --parameter-overrides TriviaBackendDomain=api-test.awsuser.group
 
 aws cloudformation deploy \
   --region us-east-1 \
@@ -135,7 +135,7 @@ aws cloudformation deploy \
   --tags project=reinvent-trivia \
   --capabilities CAPABILITY_NAMED_IAM \
   --tags project=reinvent-trivia \
-  --parameter-overrides TriviaBackendDomain=api.aws-user.group
+  --parameter-overrides TriviaBackendDomain=api.awsuser.group
 ```
 
 Then, build and deploy the backend service stacks using the AWS CDK from the `infra/cdk` folder:
