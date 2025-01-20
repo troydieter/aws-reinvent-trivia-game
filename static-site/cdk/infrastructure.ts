@@ -36,7 +36,7 @@ class TriviaGameRootDomainStack extends Stack {
 
 const app = new App();
 new TriviaGameInfrastructureStack(app, 'TriviaGameStaticSiteInfraTest', {
-    domainName: 'reinvent-trivia.com',
+    domainName: 'aws-user.group',
     siteSubDomain: 'test',
     env: { account: process.env['CDK_DEFAULT_ACCOUNT'], region: 'us-east-1' },
     tags: {
@@ -44,7 +44,7 @@ new TriviaGameInfrastructureStack(app, 'TriviaGameStaticSiteInfraTest', {
     }
 });
 new TriviaGameInfrastructureStack(app, 'TriviaGameStaticSiteInfraProd', {
-    domainName: 'reinvent-trivia.com',
+    domainName: 'aws-user.group',
     siteSubDomain: 'www',
     env: { account: process.env['CDK_DEFAULT_ACCOUNT'], region: 'us-east-1' },
     tags: {
@@ -52,7 +52,7 @@ new TriviaGameInfrastructureStack(app, 'TriviaGameStaticSiteInfraProd', {
     }
 });
 new TriviaGameRootDomainStack(app, 'TriviaGameRootDomainRedirectProd', {
-    domainName: 'reinvent-trivia.com',
+    domainName: 'aws-user.group',
     env: { account: process.env['CDK_DEFAULT_ACCOUNT'], region: 'us-east-1' },
     tags: {
         project: "reinvent-trivia"

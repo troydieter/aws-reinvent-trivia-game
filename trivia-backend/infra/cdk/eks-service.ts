@@ -215,9 +215,9 @@ class TriviaBackendStack extends Stack {
 
 const app = new App();
 new TriviaBackendStack(app, 'TriviaBackendProd', {
-  domainName: 'api.reinvent-trivia.com',
+  domainName: 'api.aws-user.group',
   // NOTE: `domainZone` must already exist in Route 53.
-  domainZone: 'reinvent-trivia.com',
+  domainZone: 'aws-user.group',
   env: {account: process.env['CDK_DEFAULT_ACCOUNT'], region: 'us-east-1'},
   tags: {
       project: "reinvent-trivia"

@@ -57,7 +57,7 @@ export class TriviaGameCfnPipeline extends Construct {
         const sourceOutput = new codepipeline.Artifact('SourceArtifact');
         const sourceAction = new actions.CodeStarConnectionsSourceAction({
             actionName: 'GitHubSource',
-            owner: 'aws-samples',
+            owner: 'troydieter',
             repo: 'aws-reinvent-trivia-game',
             connectionArn: githubConnection,
             output: sourceOutput

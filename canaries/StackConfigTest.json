@@ -6,7 +6,7 @@
     "Stage" : "test",
     "SourceBucket": "SOURCE_BUCKET",
     "SourceObjectKey": "SOURCE_OBJECT_KEY",
-    "WebpageUrl": "https://test.reinvent-trivia.com",
-    "ApiEndpoint": "https://api-test.reinvent-trivia.com/"
+    "WebpageUrl": "https://test.aws-user.group",
+    "ApiEndpoint": "https://api-test.aws-user.group/"
   }
 }
